@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <h2>CyberSecure</h2>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="threats.html">Threats</a></li>
+      <li><a href="reports.html">Reports</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+    <h1>Security Dashboard</h1>
+
+    <div class="cards">
+      <div class="card">Total Threats: 128</div>
+      <div class="card">Active Threats: 24</div>
+      <div class="card">Resolved: 104</div>
+      <div class="card critical">Critical Alerts: 6</div>
+    </div>
+
+    <h2>Recent Alerts</h2>
+
+    <div class="alert-card">
+      <h3>Malware Detected</h3>
+      <p>Severity: High</p>
+      <button onclick="openModal()">View Details</button>
+    </div>
+  </main>
+
+</div>
+
+<div class="modal" id="alertModal">
+  <div class="modal-content">
+    <span onclick="closeModal()">&times;</span>
+    <h2>Alert Details</h2>
+    <p>Malware detected on workstation #12.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
